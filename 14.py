@@ -1,4 +1,4 @@
-# ТВПС 14. Заполняем таблицу снизу, выбираем кол-во бит
+# ТВПС 14. Заполняем таблицу снизу
 # Использует символы: 0, 1, 2
 import itertools
 
@@ -14,7 +14,7 @@ transposed_table = (
     ((4, 0), (1, 1), (1, 0))
 )
 
-bits = 3
+bits = 3  # Стартовое количество бит
 found = False
 while not found:
     word_gen = itertools.product(range(3), repeat=bits)
